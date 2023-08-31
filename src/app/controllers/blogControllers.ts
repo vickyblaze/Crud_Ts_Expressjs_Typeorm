@@ -29,7 +29,6 @@ class BlogControllers {
 
   findOneBlog = async (req: Request, res: Response) => {
     const { blog_id } = req.params;
-    console.log('v')
 
     const response = await Blog.findOneBlog(parseInt(blog_id));
 
